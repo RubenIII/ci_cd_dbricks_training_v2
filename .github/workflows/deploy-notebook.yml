@@ -36,7 +36,7 @@ jobs:
       run: |
         DEST_HOST=${{ secrets.DATABRICKS_DEST_HOST }}
         DEST_TOKEN=${{ secrets.DATABRICKS_DEST_TOKEN }}
-        TEST_PATH="/Workspace/Users/coloma.ruben@gmail.com" #Permisos otra carpeta
+        TEST_PATH="/Users/coloma.ruben@gmail.com/test_permissions_$RANDOM"
 
         echo "Probando creacion de carpeta temporal en $DEST_HOST$TEST_PATH ..."
         response=$(curl -w "%{http_code}" -s -o /tmp/out.json -X POST \
