@@ -36,7 +36,6 @@ jobs:
       run: |
         DEST_HOST=${{ secrets.DATABRICKS_DEST_HOST }}
         DEST_TOKEN=${{ secrets.DATABRICKS_DEST_TOKEN }}
-        # Se van a probar permisos de escritura a esta nueva ruta.
         TEST_PATH="/Users/coloma.ruben@gmail.com/test_permissions_$RANDOM"
 
         echo "Probando creacion de carpeta temporal en $DEST_HOST$TEST_PATH ..."
